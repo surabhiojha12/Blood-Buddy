@@ -16,9 +16,24 @@ Blood-Buddy has several features such as:-
 
 Screenshots
 -------------
-* #### Job Page
 
-![job](job.png?raw=true "Optional Title")
+![home](1first.png?raw=true "Optional Title")
+-----------------------------------------------
+![home](2homepage.png?raw=true "Optional Title")
+-----------------------------------------------
+![register](3Register.png?raw=true "Optional Title")
+-----------------------------------------------
+![login](4login.png?raw=true "Optional Title")
+-----------------------------------------------
+![dashboard](5Dashboard.png?raw=true "Optional Title")
+-----------------------------------------------
+![update](6Update.png?raw=true "Optional Title")
+-----------------------------------------------
+![survey](7Survey.png?raw=true "Optional Title")
+-----------------------------------------------
+![profile](11profile.png?raw=true "Optional Title")
 -----------------------------------------------
 
-
+Links
+----------
+[PPT](https://docs.google.com/presentation/d/1lLUNONwDkXcETK6aCsNR1jSFgs9KCK8I5U7uPrUOIFk/edit?usp=sharing)

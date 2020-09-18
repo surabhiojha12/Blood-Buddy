@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style type="text/css">
+    .box {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    
+}
+
+p,h3,h2,h4,h5,h1,a{
+  font-family: 'Bitter', serif;
+  
+}
+p{
+  font-size: 18px;
+  
+}
+
+i{ font-style: bold !important;
+  color:#2C3E50;
+  font-size: 25px !important;
+}
+h5{
+color:#2C3E50;
+}
+
+
+
+
+.btn{
+  border-radius: 8px;
+}
+
+a{
+  color: inherit;
+  text-decoration: none !important;
+
+}
+
+
+.blue{
+background-color: red;
+color: white;
+border-radius: 20px;
+}
+
+input,textarea,select{
+  border: 1px solid #2C3E50;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+   outline: none;
+}
+.submit{
+  border: 1px solid red;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+   outline: none;
+}
+.tablink:hover{
+background-color:red;
+color: white;
+border-radius: 20px;
+}
+.forgot:hover{
+  color:black !important;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    input,.submit,textarea,select{
+        width: 100%;
+    }
+    
+}
+
+#id{
+ border: 1px solid red;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+   outline: none;
+
+}
+.bb:hover{
+background-color: inherit !important;
+color: inherit !important;
+}
+
+
+   </style>
+
+
+</head>
+<body style="background-color:#2f3542;">
+<!-- Navbar -->
+<div  style="background-color: red;padding: 1%">
+  <div class="w3-bar  w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu" style="background-color: red"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-white bb" style="font-size: 25px" ><strong>Blood Buddy</strong></a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right bb w3-text-white" style="border:2px solid white;border-radius: 16px"><b>Profile</b></a>
+    
+</div>
+
+  <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+     
+  </div>
+</div>
+
+
+<!--dashboard-->
+<div class="w3-container w3-text-white " style="color: white;padding:5%">
+<h1 style="color: white; font-size: 40px">DASHBOARD</h1>
+  <div class="w3-row">
+ 
+    <div class="w3-col m6">
+      <div class="w3-card-4 " style="margin: 1%;padding: 10%;background-color: red">
+       <h2>Update Your Last Blood Donation</h2>
+       <p>"Saved a life? Feel Good."</p>
+       <button class="w3-button w3-white" onclick="document.getElementById('id01').style.display='block'">Update</button>
+     </div>
+    </div>
+    <div class="w3-col m6">
+      <div class="w3-card-4 " style="margin: 1%;padding: 10%; background-color: red">
+       <h2>Need Blood? Search Here..</h2>
+       <p>"Help is just a click away."</p>
+       <button class="w3-button w3-white" onclick="document.getElementById('id02').style.display='block'">Search</button>
+     </div>
+    </div>
+  <div class="w3-col m6">
+      <div class="w3-card-4 " style="margin: 1%;padding: 10%; background-color: red">
+       <h2>Are you ready to donate ? </h2>
+       <p>Take our survey-</p>
+       <button class="w3-button w3-white" onclick="document.getElementById('id03').style.display='block'">Survey</button>
+     </div>
+    </div>
+    <div class="w3-col m6">
+      <div class="w3-card-4 " style="margin: 1%;padding: 10%; background-color: red">
+       <h2>Rate your experience!</h2>
+       <p>Help us improve.</p>
+       <button class="w3-button w3-white" onclick="document.getElementById('id04').style.display='block'">Rate Us</button>
+     </div>
+    </div>
+    </div>
+  </div>
+ <!--update-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <br>
+        <br>
+        <div style="text-align: center;">
+         <h3>Update Donation</h3>
+         <input type="text"  name="Venue" placeholder="Venue" id=venue required>
+          <br>
+          <br>
+        <input placeholder="Date Of Donation" type="text"  name="dob" id="date" onfocus="(this.type='date')" onblur="(this.type='text')"  required>
+       
+        <br>
+        <br>
+        <select name="need" id="don" required>
+          <option >Cause of Donation</option>
+          <option value="emergency">Emergency</option>
+          <option value="Normal">Normal Donation</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" name="submit" placeholder="Login" class="submit" onclick="addon()">
+        <br>
+      
+
+      </div>
+       <br>
+      </div>
+    </div>
+  </div>
+
+<!--search-->
+ <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <br>
+        <br>
+        <div style="text-align: center;">
+         <h3>Find Your Donor</h3>
+         <br>
+         <select name="city" id="bloodthrist" required>
+          <option value="" selected="selected">Select a Blood Group</option>
+          <option value="1">O+</option>
+          <option value="0">O-</option>
+          <option value="5">B+</option>
+          <option value="4">B-</option>
+          <option value="7">AB+</option>
+          <option value="6">AB-</option>
+          <option value="3">A+</option>
+          <option value="2">A-</option>
+        </select> 
+        <br>
+        <br>
+        <select name="city" id="gyard" required>
+          <option value="" selected="selected">Select a City</option>
+          <option value="chennai">Chennai</option>
+          <option value="kancheepuram">Kancheepuram</option>
+          <option value="vellore">Vellore</option>
+          <option value="thiruvallur">Thiruvallur</option>
+          <option value="trichy">Trichy</option>
+          <option value="madurai">Madurai</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" name="submit" placeholder="Login" class="submit" onclick="bsearch()">
+        <br>
+        <br>
+      </div>
+       <br>
+       <br>
+      <table class="w3-table w3-hoverable" id="spane">
+      </table>
+
+        
+      </div>
+    </div>
+  </div>
+<!--survey--> 
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <br>
+        <br>
+        <div style="text-align: center;">
+         <h3>Take Our Survey</h3>
+         
+        <select name="bp" id="bp" required>
+          <option >Your blood pressure is -</option>
+          <option value="1">High</option>
+          <option value="2">Low</option>
+          <option value="3">Normal</option>
+        
+        </select>
+        <br>
+        <br>
+        <select name="age" id="age" required>
+          <option >How old are you ?</option>
+          <option value="1">18-25</option>
+          <option value="2">26-35</option>
+          <option value="3">36-45</option>
+          <option value="4">46+</option>
+        </select>
+        <br>
+        <br>
+        <select name="weight" id="wt" required>
+          <option >Your weight :</option>
+          <option value="1">50-60</option>
+          <option value="2">60-70</option>
+          <option value="3">70-80</option>
+          <option value="4">80+</option>
+
+        </select>
+        <br>
+        <br>
+        <select name="smoke" id="smoke" required>
+          <option >How often do you smoke?</option>
+          <option value="1">Often</option>
+          <option value="2">Weekly</option>
+          <option value="3">Rarely</option>
+          <option value="4">Never</option>
+        </select>
+        <br>
+        <br>
+        <select name="travel" id="travel" required>
+          <option >How often do you travel?</option>
+          <option value="1">Often</option>
+          <option value="2">Weekly</option>
+          <option value="3">Rarely</option>
+          <option value="4">Never</option>
+        
+        
+        </select>
+        <br>
+        <br>
+        <select name="weekend" id="weekend" required>
+          <option >Weekend availability :</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+          
+        
+        </select>
+        <br>
+        <br>
+        <select name="role" id="role" required>
+          <option >Role:</option>
+          <option value="1">Student</option>
+          <option value="2">Employee</option>
+          <option value="3">Work From Home/Home-Maker</option>
+          <option value="4">Retired</option>
+
+          </select>
+        <br>
+        <br>
+        <select name="gender" id="gender" required>
+          <option >Gender :</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          
+          
+        
+        </select>
+        <br>
+        <br>
+        Tell us ur experience of donating blood:
+        <br>
+        <textarea id='emo' rows="5" cols='5' style="text-align: left">
+        </textarea>
+        <br>
+        <br>
+        
+        <input type="submit" name="submit" placeholder="Login" class="submit" onclick=surveyjs()>
+        <br>
+      
+      
+
+       </div>
+       <br>
+      </div>
+    </div>
+  </div>
+<!--useful-->
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <br>
+      <br>
+      <form style="text-align: center;">
+       <h3>Your Experience</h3>
+       <br>
+       <select name="city" id="bg" required>
+        <option value="" selected="selected">Select a Blood Group</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+      </select> 
+      <br>
+      <br>
+      <select name="rate" id="rate" required>
+        <option value="" selected="selected">Select your experience</option>
+        <option value="excellent">Excellent</option>
+        <option value="verygood">Very Good</option>
+        <option value="good">Good</option>
+        <option value="avg">Average</option>
+        <option value="poor">Poor</option>
+        <option value="verypoor">Very poor</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" name="submit" placeholder="Login" class="submit">
+      <br>
+      <br>
+     </form>
+     <br>
+     <br>
+    <table>
+    </table>
+
+      
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<br>
+<p style="color: white;text-align: center;" class="">Copyrights-2018@BloodBuddy.com</p>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="auth.js"></script>
+<script src="brain.js"></script>
+<script src="training-data.js"></script>
+<script src="dash.js"></script>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>

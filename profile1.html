@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style type="text/css">
+    .box {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    
+}
+
+p,h3,h2,h4,h5,h1,a{
+  font-family: 'Bitter', serif;
+  
+}
+p{
+  font-size: 18px;
+  
+}
+
+i{ font-style: bold !important;
+  color:#2C3E50;
+  font-size: 25px !important;
+}
+h5{
+color:#2C3E50;
+}
+
+
+
+
+.btn{
+  border-radius: 8px;
+}
+
+a{
+  color: inherit;
+  text-decoration: none !important;
+
+}
+
+
+.blue{
+background-color: red;
+color: white;
+border-radius: 20px;
+}
+
+input,textarea,select{
+  border: 1px solid #2C3E50;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+   outline: none;
+}
+.submit{
+  border: 1px solid red;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+   outline: none;
+}
+.tablink:hover{
+background-color:red;
+color: white;
+border-radius: 20px;
+}
+.forgot:hover{
+  color:black !important;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    input,.submit,textarea,select{
+        width: 100%;
+    }
+   .b1{
+    width: 50%;
+    border-radius: 40%;
+    padding: 5px;
+   }
+    
+}
+
+#id{
+ border: 1px solid red;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+   outline: none;
+
+}
+.bb:hover{
+background-color: inherit !important;
+color: inherit !important;
+}
+
+
+   </style>
+
+
+</head>
+<body style="background-color:#2f3542;">
+<!-- Navbar -->
+<div  style="background-color: red;padding: 1%">
+  <div class="w3-bar  w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu" style="background-color: red"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-white bb" style="font-size: 25px" ><strong>Blood Buddy</strong></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right bb w3-text-white" style="border:2px solid white;border-radius: 16px"><b>Logout</b></a>
+    
+</div>
+
+  <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Logout</a>
+     
+  </div>
+</div>
+<br>
+<!-- Container -->
+<div class="w3-content" id="menu" style="padding-top: 1%;padding-bottom: 2%">
+<div class="w3-container w3-card-4 w3-white" style="border-radius: 6px">
+ <div class="w3-row">
+  <div class="w3-col m4">
+    <br>
+    <h1><b id="demm">User Name</b></h1>
+      <hr>
+          <p><i class="fa fa-home fa-fw  " ></i> <span id=addr> Anna Nagar,Chennai</span> </p>
+          <p><i class="fa fa-envelope fa-fw"></i>  <span id="email"> Anna Nagar,Chennai</span></p>
+          <p><i class="fa fa-phone fa-fw "></i>  <span id="phone"> Anna Nagar,Chennai</span></p>
+          <hr>
+          <h3 ><i class="fa fa-asterisk "></i> <b><span > Blood Group</span></b></h3>
+          <br>
+           <p id="bggg">O+</p>
+          <hr>
+          <h3 ><i class="fa fa-asterisk " ></i> <b>You have donated :</b></h3>
+          <br>
+           <p id="dno">8 times</p>
+          <hr>
+          <h3 ><i class="fa fa-heart " ></i> <b>A lovely Quote:</b></h3>
+           <p> Save a life and see yours change </p>
+           
+          <br>
+</div> 
+ 
+
+ <div class="w3-col m8 " >
+   <div class="w3-card-4 w3-padding-large w3-margin">
+     <h4>Your Badge:</h4>
+     <br>
+     <div class="w3-row">
+     <div  style="text-align: center;border:2px solid #cc6633; border-radius: 50%; padding: 5%;background-color: #cc6633;color: white" id="bronze" class="w3-col m4 w3-card-4 b1 w3-hide">
+       <h4>Blood Donation</h4>
+        <p>Bronze Level</p>
+        <i class="fa fa-certificate" style="color: #604020"></i>
+     </div>
+     <div  style="text-align: center;border:2px solid silver; border-radius: 50%; padding: 5%;background-color:  silver;color: black" id="silver" class="w3-col m4 w3-card-4 b1 w3-hide">
+       <h4>Blood Donation</h4>
+        <p>Silver Level</p>
+        <i class="fa fa-certificate" style="color:  #808080"></i><i class="fa fa-certificate" style="color:   #808080"></i>
+     </div>
+     <div  style="text-align: center;border:2px solid goldenrod; border-radius: 50%; padding: 5%;background-color: goldenrod;color: white" id="gold" class="w3-col m4 w3-card-4 b1 w3-hide">
+       <h4>Blood Donation</h4>
+        <p>Golden Level</p>
+        <i class="fa fa-certificate" style="color: #996515"></i>
+        <i class="fa fa-certificate" style="color: #996515"></i>
+        <i class="fa fa-certificate" style="color: #996515"></i>
+     </div>
+   </div>
+     <br>
+     <h4>Share with pride on:</h4>
+     <button class="w3-button"><i class="fa fa-facebook"></i></button>
+     <button class="w3-button"><i class="fa fa-twitter"></i></button>
+     <button class="w3-button"><i class="fa fa-instagram"></i></button>
+   </div>
+ </div>
+ <div class="w3-col m8 " >
+   <div class="w3-card-4 w3-padding-large w3-margin">
+     <h3>Badge Earning:</h3>
+     <p><i class="fa fa-certificate" style="color: #604020"></i> Donate 3 times or more for a Bronze Badge</p>
+     <p><i class="fa fa-certificate" style="color:  #808080"></i> Donate 5 times or more for a Silver Badge</p>
+     <p><i class="fa fa-certificate" style="color: #996515"></i> Donate 8 times or more for a Golden Badge</p>
+    </div> 
+ </div>
+</div>
+</div>
+<br>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="auth.js"></script>
+<script src="profile.js"></script>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
